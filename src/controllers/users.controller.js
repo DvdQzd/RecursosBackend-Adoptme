@@ -2,7 +2,12 @@ import { usersService } from "../services/index.js"
 
 const getAllUsers = async(req,res)=>{
     const users = await usersService.getAll();
-    res.send({status:"success",payload:users})
+    res.send({
+        status:"success",
+        isValid: true,
+        cualquierCosa: "hola",
+        payload:users,
+    })
 }
 
 const getUser = async(req,res)=> {
