@@ -5,6 +5,7 @@ const getAllUsers = async(req,res)=>{
     res.send({
         status:"success",
         isValid: true,
+        cualquierCosa: "hola",
         payload:users,
     })
 }
